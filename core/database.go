@@ -3,8 +3,6 @@ package core
 import (
 	"database/sql"
 	"fmt"
-
-	"github.com/rachmatprabowo/redsfin2/modules/auth/model"
 )
 
 // DB is type of database
@@ -30,12 +28,4 @@ func (db DB) Connect() *sql.DB {
 	CheckErr(err, "Can not connect to  master database ")
 
 	return d
-}
-
-func insert(obj struct{}) {
-
-}
-
-func test() {
-	insert(model.User)
 }
